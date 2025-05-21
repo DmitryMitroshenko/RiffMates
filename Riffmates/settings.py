@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "home",
+    "bands",
 ]
 
 MIDDLEWARE = [
@@ -57,10 +58,11 @@ ROOT_URLCONF = "Riffmates.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / 'templates'],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
+
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
@@ -68,6 +70,12 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
+
+
+
 
 WSGI_APPLICATION = "Riffmates.wsgi.application"
 
